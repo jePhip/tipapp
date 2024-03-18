@@ -10,7 +10,7 @@
           :color="btn1Color"
           block
           @click="toggleColor('btn1Color')"
-          ><h1>23%</h1></v-btn
+          ><h1>20%</h1></v-btn
         >
       </v-col>
       <v-col cols="4">
@@ -44,11 +44,11 @@
 // import { defineComponent } from "vue";
 import { ref } from "vue";
 import alertSoundFile from "@/assets/alarm.mp3";
-import successSoundFile from "@/assets/success.mp3"
+import successSoundFile from "@/assets/success.mp3";
 //Components
 //import RouteCard from "@/components/cards/RouteCard.vue";
 let alertSound = ref();
-let successSound = ref()
+let successSound = ref();
 alertSound.value = new Audio(alertSoundFile);
 successSound.value = new Audio(successSoundFile);
 let btn1Color = ref("blue");
